@@ -1,15 +1,6 @@
 #cloud-config
-
-hostname: svrlk8svxr-rancher
-
 rancher:
   network:
-    interfaces:
-      eth*:
-       dhcp: false
-      eth0:
-       address: 10.0.127.239/24
-       gateway: 10.0.127.1
     dns:
      nameservers:
       - 10.0.127.81
